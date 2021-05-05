@@ -3,10 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9119583261D926900066BF1 /* Localazy-debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9119582261D926900066BF1 /* Localazy-debug.plist */; };
+		A9119584261D926900066BF1 /* Localazy-debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9119582261D926900066BF1 /* Localazy-debug.plist */; };
+		A9A01A1A2626C3210080E852 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9A01A1D2626C3210080E852 /* Localizable.strings */; };
+		A9A01A1B2626C3210080E852 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9A01A1D2626C3210080E852 /* Localizable.strings */; };
+		A9A01A35262700170080E852 /* Localazy.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A01A34262700170080E852 /* Localazy.xcframework */; };
+		A9A01A36262700170080E852 /* Localazy.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A01A34262700170080E852 /* Localazy.xcframework */; };
+		A9A01A37262700230080E852 /* Localazy.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9A01A34262700170080E852 /* Localazy.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A9A01A52262731630080E852 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = A9A01A55262731630080E852 /* Localizable.stringsdict */; };
+		A9A01A53262731630080E852 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = A9A01A55262731630080E852 /* Localizable.stringsdict */; };
 		A9E86EDF2615CC3D0056CB17 /* LocalazyClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E86ECC2615CC3B0056CB17 /* LocalazyClientApp.swift */; };
 		A9E86EE02615CC3D0056CB17 /* LocalazyClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E86ECC2615CC3B0056CB17 /* LocalazyClientApp.swift */; };
 		A9E86EE12615CC3D0056CB17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E86ECD2615CC3B0056CB17 /* ContentView.swift */; };
@@ -15,7 +24,30 @@
 		A9E86EE42615CC3D0056CB17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9E86ECE2615CC3D0056CB17 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A91195AA261DDED800066BF1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A9A01A37262700230080E852 /* Localazy.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A90E5368261F807A00443AC2 /* localazy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = localazy.json; sourceTree = "<group>"; };
+		A9119582261D926900066BF1 /* Localazy-debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Localazy-debug.plist"; sourceTree = "<group>"; };
+		A9A01A1C2626C3210080E852 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A9A01A1E2626C33F0080E852 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A9A01A1F2626C3440080E852 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A9A01A34262700170080E852 /* Localazy.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Localazy.xcframework; sourceTree = "<group>"; };
+		A9A01A54262731630080E852 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		A9A01A56262731650080E852 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = de; path = de.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		A9A01A57262731650080E852 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = sk; path = sk.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		A9E86ECC2615CC3B0056CB17 /* LocalazyClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalazyClientApp.swift; sourceTree = "<group>"; };
 		A9E86ECD2615CC3B0056CB17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A9E86ECE2615CC3D0056CB17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A01A35262700170080E852 /* Localazy.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,15 +71,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A01A36262700170080E852 /* Localazy.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9A01A162626C2E20080E852 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				A9A01A1D2626C3210080E852 /* Localizable.strings */,
+				A9A01A55262731630080E852 /* Localizable.stringsdict */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
 		A9E86EC62615CC3A0056CB17 = {
 			isa = PBXGroup;
 			children = (
+				A90E5368261F807A00443AC2 /* localazy.json */,
 				A9E86ECB2615CC3A0056CB17 /* Shared */,
 				A9E86ED52615CC3D0056CB17 /* iOS */,
 				A9E86EDC2615CC3D0056CB17 /* macOS */,
@@ -57,8 +101,11 @@
 		A9E86ECB2615CC3A0056CB17 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				A9A01A34262700170080E852 /* Localazy.xcframework */,
+				A9A01A162626C2E20080E852 /* Localizations */,
 				A9E86ECC2615CC3B0056CB17 /* LocalazyClientApp.swift */,
 				A9E86ECD2615CC3B0056CB17 /* ContentView.swift */,
+				A9119582261D926900066BF1 /* Localazy-debug.plist */,
 				A9E86ECE2615CC3D0056CB17 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -100,12 +147,16 @@
 				A9E86ECF2615CC3D0056CB17 /* Sources */,
 				A9E86ED02615CC3D0056CB17 /* Frameworks */,
 				A9E86ED12615CC3D0056CB17 /* Resources */,
+				A91195AA261DDED800066BF1 /* Embed Frameworks */,
+				A9EB3E9B26427F66002ACCE9 /* Localazy upload */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "LocalazyClient (iOS)";
+			packageProductDependencies = (
+			);
 			productName = "LocalazyClient (iOS)";
 			productReference = A9E86ED32615CC3D0056CB17 /* LocalazyClient.app */;
 			productType = "com.apple.product-type.application";
@@ -151,8 +202,12 @@
 			knownRegions = (
 				en,
 				Base,
+				sk,
+				de,
 			);
 			mainGroup = A9E86EC62615CC3A0056CB17;
+			packageReferences = (
+			);
 			productRefGroup = A9E86ED42615CC3D0056CB17 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -169,6 +224,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9E86EE32615CC3D0056CB17 /* Assets.xcassets in Resources */,
+				A9A01A52262731630080E852 /* Localizable.stringsdict in Resources */,
+				A9A01A1A2626C3210080E852 /* Localizable.strings in Resources */,
+				A9119583261D926900066BF1 /* Localazy-debug.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,10 +235,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9E86EE42615CC3D0056CB17 /* Assets.xcassets in Resources */,
+				A9A01A53262731630080E852 /* Localizable.stringsdict in Resources */,
+				A9A01A1B2626C3210080E852 /* Localizable.strings in Resources */,
+				A9119584261D926900066BF1 /* Localazy-debug.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9EB3E9B26427F66002ACCE9 /* Localazy upload */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Localazy upload";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9E86ECF2615CC3D0056CB17 /* Sources */ = {
@@ -202,6 +284,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A9A01A1D2626C3210080E852 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9A01A1C2626C3210080E852 /* en */,
+				A9A01A1E2626C33F0080E852 /* de */,
+				A9A01A1F2626C3440080E852 /* sk */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		A9A01A55262731630080E852 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9A01A54262731630080E852 /* en */,
+				A9A01A56262731650080E852 /* de */,
+				A9A01A57262731650080E852 /* sk */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A9E86EE52615CC3D0056CB17 /* Debug */ = {
@@ -323,6 +428,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 82LEPE252C;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shared",
+				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -345,6 +454,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 82LEPE252C;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shared",
+				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -371,6 +484,10 @@
 				DEVELOPMENT_TEAM = 82LEPE252C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shared",
+				);
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -395,6 +512,10 @@
 				DEVELOPMENT_TEAM = 82LEPE252C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shared",
+				);
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

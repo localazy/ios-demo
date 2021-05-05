@@ -1,0 +1,44 @@
+{
+    
+    "writeKey": "write-token-1000000-3000200",
+    "readKey": "read-token-1000000-3000200",
+    
+    "upload": {
+        "files": [
+            {
+                "type": "ios-strings",
+                "pattern": "Shared/Localizations/en.lproj/*.strings",
+                "lang": "inherited"
+            },
+            {
+                "type": "ios-stringsdict",
+                "pattern": "Shared/Localizations/en.lproj/*.stringsdict",
+                "lang": "inherited"
+            },
+            {
+                "group": "existing",
+                "type": "ios-strings",
+                "lang": "${autodetectLang}",
+                "pattern": "Shared/Localizations/**/*.strings",
+                "excludes": [
+                    "Shared/Localizations/en.lproj/*.strings"
+                ]
+            },
+            {
+                "group": "existing",
+                "type": "ios-stringsdict",
+                "lang": "${autodetectLang}",
+                "pattern": "Shared/Localizations/**/*.stringsdict",
+                "excludes": [
+                    "Shared/Localizations/en.lproj/*.stringsdict"
+                ]
+            }
+        ]
+    },
+    
+    "download": {
+        "files": "Shared/Localizations/${lang}.lproj/${file}",
+        "includeSourceLang": false
+    }
+    
+}
