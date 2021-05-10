@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A9119583261D926900066BF1 /* Localazy-debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9119582261D926900066BF1 /* Localazy-debug.plist */; };
-		A9119584261D926900066BF1 /* Localazy-debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9119582261D926900066BF1 /* Localazy-debug.plist */; };
+		A9119583261D926900066BF1 /* Localazy.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9119582261D926900066BF1 /* Localazy.plist */; };
+		A9119584261D926900066BF1 /* Localazy.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9119582261D926900066BF1 /* Localazy.plist */; };
 		A9A01A1A2626C3210080E852 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9A01A1D2626C3210080E852 /* Localizable.strings */; };
 		A9A01A1B2626C3210080E852 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9A01A1D2626C3210080E852 /* Localizable.strings */; };
-		A9A01A35262700170080E852 /* Localazy.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A01A34262700170080E852 /* Localazy.xcframework */; };
-		A9A01A36262700170080E852 /* Localazy.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A01A34262700170080E852 /* Localazy.xcframework */; };
-		A9A01A37262700230080E852 /* Localazy.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9A01A34262700170080E852 /* Localazy.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A9A01A52262731630080E852 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = A9A01A55262731630080E852 /* Localizable.stringsdict */; };
 		A9A01A53262731630080E852 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = A9A01A55262731630080E852 /* Localizable.stringsdict */; };
+		A9A4B62926490D67001610B1 /* Localazy in Frameworks */ = {isa = PBXBuildFile; productRef = A9A4B62826490D67001610B1 /* Localazy */; };
+		A9A4B62C26490E8B001610B1 /* Localazy in Frameworks */ = {isa = PBXBuildFile; productRef = A9A4B62B26490E8B001610B1 /* Localazy */; };
 		A9E86EDF2615CC3D0056CB17 /* LocalazyClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E86ECC2615CC3B0056CB17 /* LocalazyClientApp.swift */; };
 		A9E86EE02615CC3D0056CB17 /* LocalazyClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E86ECC2615CC3B0056CB17 /* LocalazyClientApp.swift */; };
 		A9E86EE12615CC3D0056CB17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E86ECD2615CC3B0056CB17 /* ContentView.swift */; };
@@ -31,7 +30,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A9A01A37262700230080E852 /* Localazy.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,11 +38,10 @@
 
 /* Begin PBXFileReference section */
 		A90E5368261F807A00443AC2 /* localazy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = localazy.json; sourceTree = "<group>"; };
-		A9119582261D926900066BF1 /* Localazy-debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Localazy-debug.plist"; sourceTree = "<group>"; };
+		A9119582261D926900066BF1 /* Localazy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Localazy.plist; sourceTree = "<group>"; };
 		A9A01A1C2626C3210080E852 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A9A01A1E2626C33F0080E852 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A9A01A1F2626C3440080E852 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A9A01A34262700170080E852 /* Localazy.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Localazy.xcframework; sourceTree = "<group>"; };
 		A9A01A54262731630080E852 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		A9A01A56262731650080E852 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = de; path = de.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		A9A01A57262731650080E852 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = sk; path = sk.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
@@ -63,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9A01A35262700170080E852 /* Localazy.xcframework in Frameworks */,
+				A9A4B62926490D67001610B1 /* Localazy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9A01A36262700170080E852 /* Localazy.xcframework in Frameworks */,
+				A9A4B62C26490E8B001610B1 /* Localazy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +84,13 @@
 			path = Localizations;
 			sourceTree = "<group>";
 		};
+		A9A4B62A26490E8B001610B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A9E86EC62615CC3A0056CB17 = {
 			isa = PBXGroup;
 			children = (
@@ -95,17 +99,17 @@
 				A9E86ED52615CC3D0056CB17 /* iOS */,
 				A9E86EDC2615CC3D0056CB17 /* macOS */,
 				A9E86ED42615CC3D0056CB17 /* Products */,
+				A9A4B62A26490E8B001610B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		A9E86ECB2615CC3A0056CB17 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				A9A01A34262700170080E852 /* Localazy.xcframework */,
 				A9A01A162626C2E20080E852 /* Localizations */,
 				A9E86ECC2615CC3B0056CB17 /* LocalazyClientApp.swift */,
 				A9E86ECD2615CC3B0056CB17 /* ContentView.swift */,
-				A9119582261D926900066BF1 /* Localazy-debug.plist */,
+				A9119582261D926900066BF1 /* Localazy.plist */,
 				A9E86ECE2615CC3D0056CB17 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -156,6 +160,7 @@
 			);
 			name = "LocalazyClient (iOS)";
 			packageProductDependencies = (
+				A9A4B62826490D67001610B1 /* Localazy */,
 			);
 			productName = "LocalazyClient (iOS)";
 			productReference = A9E86ED32615CC3D0056CB17 /* LocalazyClient.app */;
@@ -174,6 +179,9 @@
 			dependencies = (
 			);
 			name = "LocalazyClient (macOS)";
+			packageProductDependencies = (
+				A9A4B62B26490E8B001610B1 /* Localazy */,
+			);
 			productName = "LocalazyClient (macOS)";
 			productReference = A9E86EDB2615CC3D0056CB17 /* LocalazyClient.app */;
 			productType = "com.apple.product-type.application";
@@ -207,6 +215,7 @@
 			);
 			mainGroup = A9E86EC62615CC3A0056CB17;
 			packageReferences = (
+				A9A4B62726490D67001610B1 /* XCRemoteSwiftPackageReference "localazy-swift" */,
 			);
 			productRefGroup = A9E86ED42615CC3D0056CB17 /* Products */;
 			projectDirPath = "";
@@ -226,7 +235,7 @@
 				A9E86EE32615CC3D0056CB17 /* Assets.xcassets in Resources */,
 				A9A01A52262731630080E852 /* Localizable.stringsdict in Resources */,
 				A9A01A1A2626C3210080E852 /* Localizable.strings in Resources */,
-				A9119583261D926900066BF1 /* Localazy-debug.plist in Resources */,
+				A9119583261D926900066BF1 /* Localazy.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +246,7 @@
 				A9E86EE42615CC3D0056CB17 /* Assets.xcassets in Resources */,
 				A9A01A53262731630080E852 /* Localizable.stringsdict in Resources */,
 				A9A01A1B2626C3210080E852 /* Localizable.strings in Resources */,
-				A9119584261D926900066BF1 /* Localazy-debug.plist in Resources */,
+				A9119584261D926900066BF1 /* Localazy.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,6 +569,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A9A4B62726490D67001610B1 /* XCRemoteSwiftPackageReference "localazy-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/localazy/localazy-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9A4B62826490D67001610B1 /* Localazy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9A4B62726490D67001610B1 /* XCRemoteSwiftPackageReference "localazy-swift" */;
+			productName = Localazy;
+		};
+		A9A4B62B26490E8B001610B1 /* Localazy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9A4B62726490D67001610B1 /* XCRemoteSwiftPackageReference "localazy-swift" */;
+			productName = Localazy;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A9E86EC72615CC3A0056CB17 /* Project object */;
 }

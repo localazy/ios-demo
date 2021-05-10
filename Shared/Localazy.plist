@@ -3,7 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>readKey</key>
-	<string></string>
+	<string>read-token-1000000-3000200</string>
+	<key>testing</key>
+	<true/>
 	<key>statistics</key>
 	<dict>
 		<key>statsEnabled</key>
