@@ -52,7 +52,7 @@ struct ContentView: View {
             
         }
         .onAppear(perform: onAppear)
-        .onChange(of: contentViewModel.didLoadLocalizedStrings) { _ in
+        .onReceive(contentViewModel.$didLoadLocalizedStrings) { _ in
             onStringsLoaded()
         }
         .onReceive(NotificationCenter.default.publisher(for: .localazyMissingTextFound)) { notif in
