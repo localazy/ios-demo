@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct LocalazyClientApp: App {
+    
+    init() {
+        Bundle.swizzleLocalizationWithLocalazy()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
+    
 }
