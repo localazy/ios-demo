@@ -49,36 +49,37 @@ struct ContentView: View {
             Button(action: { _ = Localazy.shared.getString(for: "Just-in-source-lang") }) {
                 Text("Access key without translation")
             }
+            .padding()
+            
+            Button(action: { Localazy.shared.forceReload() }) {
+                // Will force - reload all localizations and will cause server fetch to be performed
+                Text("Force reload")
+            }
+            .padding()
             
         }
         .onAppear(perform: onAppear)
         .onReceive(contentViewModel.$didLoadLocalizedStrings) { _ in
             onStringsLoaded()
         }
-        .onReceive(NotificationCenter.default.publisher(for: .localazyMissingTextFound)) { notif in
-            _ = notif.userInfo?["id"] as? LocalazyID
-            let locale = notif.userInfo?["locale"] as? LocalazyLocale
-            let key = notif.userInfo?["key"] as? String ?? "--"
-            os_log("Missing translation found for key: %@, locale: %@.", log: .default, type: .info, key, locale?.description ?? "--")
-        }
+        .onReceive(NotificationCenter.default.publisher(for: .localazyMissingTextFound), perform: onKeyMissing(notif:))
     }
     
     func onAppear() {
         // Will override default configuration defined in Localazy.plist
         Localazy.shared.setStatsEnabled(true)
-        // Will force - reload all localizations and will cause server fetch to be performed
-        Localazy.shared.forceReload()
     }
     
     /// Custom logic when all translations were successfully loaded into memory
     func onStringsLoaded() {
-        let locales = Localazy.shared.getLocales()
-        print(locales)
-        
-        let string = Localazy.shared.getString(for: "Hello")
-        print(string)
-        
-        print("Hello".localazyLocalized)
+        // ...
+    }
+    
+    func onKeyMissing(notif: NotificationCenter.Publisher.Output) {
+        _ = notif.userInfo?["id"] as? LocalazyID
+        let locale = notif.userInfo?["locale"] as? LocalazyLocale
+        let key = notif.userInfo?["key"] as? String ?? "--"
+        os_log("Missing translation found for key: %@, locale: %@.", log: .default, type: .info, key, locale?.description ?? "--")
     }
     
 }
