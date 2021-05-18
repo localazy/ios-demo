@@ -258,6 +258,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9E86EEA2615CC3D0056CB17 /* Build configuration list for PBXNativeTarget "LocalazyClient (macOS)" */;
 			buildPhases = (
+				A95C1E212653F4CF00989F4A /* Upload strings to Localazy */,
 				A9E86ED72615CC3D0056CB17 /* Sources */,
 				A9E86ED82615CC3D0056CB17 /* Frameworks */,
 				A9E86ED92615CC3D0056CB17 /* Resources */,
@@ -355,6 +356,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A95C1E212653F4CF00989F4A /* Upload strings to Localazy */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Upload strings to Localazy";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nlocalazy upload existing --test\n";
+		};
 		A9EB3E9B26427F66002ACCE9 /* Localazy upload */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
