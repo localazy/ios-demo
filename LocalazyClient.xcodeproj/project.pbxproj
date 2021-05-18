@@ -9,12 +9,24 @@
 /* Begin PBXBuildFile section */
 		A9119583261D926900066BF1 /* Localazy.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9119582261D926900066BF1 /* Localazy.plist */; };
 		A9119584261D926900066BF1 /* Localazy.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9119582261D926900066BF1 /* Localazy.plist */; };
+		A9934C2C2652525900AD141D /* Localazy.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9934C2B2652522100AD141D /* Localazy.xcframework */; };
+		A9934C2D2652525900AD141D /* Localazy.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9934C2B2652522100AD141D /* Localazy.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A9934C2E2652526300AD141D /* Localazy.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9934C2B2652522100AD141D /* Localazy.xcframework */; };
+		A9934C2F2652526300AD141D /* Localazy.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9934C2B2652522100AD141D /* Localazy.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A9A01A1A2626C3210080E852 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9A01A1D2626C3210080E852 /* Localizable.strings */; };
 		A9A01A1B2626C3210080E852 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9A01A1D2626C3210080E852 /* Localizable.strings */; };
 		A9A01A52262731630080E852 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = A9A01A55262731630080E852 /* Localizable.stringsdict */; };
 		A9A01A53262731630080E852 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = A9A01A55262731630080E852 /* Localizable.stringsdict */; };
-		A9A4B62926490D67001610B1 /* Localazy in Frameworks */ = {isa = PBXBuildFile; productRef = A9A4B62826490D67001610B1 /* Localazy */; };
-		A9A4B62C26490E8B001610B1 /* Localazy in Frameworks */ = {isa = PBXBuildFile; productRef = A9A4B62B26490E8B001610B1 /* Localazy */; };
+		A9E189BB2653B10A004459C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E189BA2653B10A004459C4 /* AppDelegate.swift */; };
+		A9E189BD2653B10A004459C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E189BC2653B10A004459C4 /* SceneDelegate.swift */; };
+		A9E189BF2653B10A004459C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E189BE2653B10A004459C4 /* ViewController.swift */; };
+		A9E189C22653B10A004459C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E189C02653B10A004459C4 /* Main.storyboard */; };
+		A9E189C42653B10B004459C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9E189C32653B10B004459C4 /* Assets.xcassets */; };
+		A9E189C72653B10B004459C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E189C52653B10B004459C4 /* LaunchScreen.storyboard */; };
+		A9E189CC2653B119004459C4 /* Localazy.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9934C2B2652522100AD141D /* Localazy.xcframework */; };
+		A9E189CD2653B119004459C4 /* Localazy.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9934C2B2652522100AD141D /* Localazy.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A9E189D52653B9FA004459C4 /* Localazy.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9119582261D926900066BF1 /* Localazy.plist */; };
+		A9E189D72653BB9E004459C4 /* UILabelLocalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E189D62653BB9E004459C4 /* UILabelLocalized.swift */; };
 		A9E86EDF2615CC3D0056CB17 /* LocalazyClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E86ECC2615CC3B0056CB17 /* LocalazyClientApp.swift */; };
 		A9E86EE02615CC3D0056CB17 /* LocalazyClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E86ECC2615CC3B0056CB17 /* LocalazyClientApp.swift */; };
 		A9E86EE12615CC3D0056CB17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E86ECD2615CC3B0056CB17 /* ContentView.swift */; };
@@ -30,6 +42,29 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A9934C2D2652525900AD141D /* Localazy.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9934C302652526300AD141D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A9934C2F2652526300AD141D /* Localazy.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9E189CE2653B119004459C4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A9E189CD2653B119004459C4 /* Localazy.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,12 +74,22 @@
 /* Begin PBXFileReference section */
 		A90E5368261F807A00443AC2 /* localazy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = localazy.json; sourceTree = "<group>"; };
 		A9119582261D926900066BF1 /* Localazy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Localazy.plist; sourceTree = "<group>"; };
+		A9934C2B2652522100AD141D /* Localazy.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Localazy.xcframework; sourceTree = "<group>"; };
 		A9A01A1C2626C3210080E852 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A9A01A1E2626C33F0080E852 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A9A01A1F2626C3440080E852 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A9A01A54262731630080E852 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		A9A01A56262731650080E852 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = de; path = de.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		A9A01A57262731650080E852 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = sk; path = sk.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		A9E189B82653B10A004459C4 /* LocalazyClient UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LocalazyClient UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E189BA2653B10A004459C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9E189BC2653B10A004459C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A9E189BE2653B10A004459C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9E189C12653B10A004459C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9E189C32653B10B004459C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9E189C62653B10B004459C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9E189C82653B10B004459C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9E189D62653BB9E004459C4 /* UILabelLocalized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelLocalized.swift; sourceTree = "<group>"; };
 		A9E86ECC2615CC3B0056CB17 /* LocalazyClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalazyClientApp.swift; sourceTree = "<group>"; };
 		A9E86ECD2615CC3B0056CB17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A9E86ECE2615CC3D0056CB17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,11 +101,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A9E189B52653B10A004459C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E189CC2653B119004459C4 /* Localazy.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9E86ED02615CC3D0056CB17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9A4B62926490D67001610B1 /* Localazy in Frameworks */,
+				A9934C2C2652525900AD141D /* Localazy.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9A4B62C26490E8B001610B1 /* Localazy in Frameworks */,
+				A9934C2E2652526300AD141D /* Localazy.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,13 +144,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A9E189B92653B10A004459C4 /* LocalazyClient UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A9E189BA2653B10A004459C4 /* AppDelegate.swift */,
+				A9E189BC2653B10A004459C4 /* SceneDelegate.swift */,
+				A9E189BE2653B10A004459C4 /* ViewController.swift */,
+				A9E189D62653BB9E004459C4 /* UILabelLocalized.swift */,
+				A9E189C02653B10A004459C4 /* Main.storyboard */,
+				A9E189C32653B10B004459C4 /* Assets.xcassets */,
+				A9E189C52653B10B004459C4 /* LaunchScreen.storyboard */,
+				A9E189C82653B10B004459C4 /* Info.plist */,
+			);
+			path = "LocalazyClient UIKit";
+			sourceTree = "<group>";
+		};
 		A9E86EC62615CC3A0056CB17 = {
 			isa = PBXGroup;
 			children = (
 				A90E5368261F807A00443AC2 /* localazy.json */,
+				A9934C2B2652522100AD141D /* Localazy.xcframework */,
+				A9119582261D926900066BF1 /* Localazy.plist */,
 				A9E86ECB2615CC3A0056CB17 /* Shared */,
 				A9E86ED52615CC3D0056CB17 /* iOS */,
 				A9E86EDC2615CC3D0056CB17 /* macOS */,
+				A9E189B92653B10A004459C4 /* LocalazyClient UIKit */,
 				A9E86ED42615CC3D0056CB17 /* Products */,
 				A9A4B62A26490E8B001610B1 /* Frameworks */,
 			);
@@ -109,7 +180,6 @@
 				A9A01A162626C2E20080E852 /* Localizations */,
 				A9E86ECC2615CC3B0056CB17 /* LocalazyClientApp.swift */,
 				A9E86ECD2615CC3B0056CB17 /* ContentView.swift */,
-				A9119582261D926900066BF1 /* Localazy.plist */,
 				A9E86ECE2615CC3D0056CB17 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -120,6 +190,7 @@
 			children = (
 				A9E86ED32615CC3D0056CB17 /* LocalazyClient.app */,
 				A9E86EDB2615CC3D0056CB17 /* LocalazyClient.app */,
+				A9E189B82653B10A004459C4 /* LocalazyClient UIKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +215,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A9E189B72653B10A004459C4 /* LocalazyClient UIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9E189CB2653B10B004459C4 /* Build configuration list for PBXNativeTarget "LocalazyClient UIKit" */;
+			buildPhases = (
+				A9E189B42653B10A004459C4 /* Sources */,
+				A9E189B52653B10A004459C4 /* Frameworks */,
+				A9E189B62653B10A004459C4 /* Resources */,
+				A9E189CE2653B119004459C4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LocalazyClient UIKit";
+			productName = "LocalazyClient UIKit";
+			productReference = A9E189B82653B10A004459C4 /* LocalazyClient UIKit.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A9E86ED22615CC3D0056CB17 /* LocalazyClient (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9E86EE72615CC3D0056CB17 /* Build configuration list for PBXNativeTarget "LocalazyClient (iOS)" */;
@@ -160,7 +249,6 @@
 			);
 			name = "LocalazyClient (iOS)";
 			packageProductDependencies = (
-				A9A4B62826490D67001610B1 /* Localazy */,
 			);
 			productName = "LocalazyClient (iOS)";
 			productReference = A9E86ED32615CC3D0056CB17 /* LocalazyClient.app */;
@@ -173,6 +261,7 @@
 				A9E86ED72615CC3D0056CB17 /* Sources */,
 				A9E86ED82615CC3D0056CB17 /* Frameworks */,
 				A9E86ED92615CC3D0056CB17 /* Resources */,
+				A9934C302652526300AD141D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,7 +269,6 @@
 			);
 			name = "LocalazyClient (macOS)";
 			packageProductDependencies = (
-				A9A4B62B26490E8B001610B1 /* Localazy */,
 			);
 			productName = "LocalazyClient (macOS)";
 			productReference = A9E86EDB2615CC3D0056CB17 /* LocalazyClient.app */;
@@ -195,6 +283,9 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					A9E189B72653B10A004459C4 = {
+						CreatedOnToolsVersion = 12.5;
+					};
 					A9E86ED22615CC3D0056CB17 = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -215,7 +306,6 @@
 			);
 			mainGroup = A9E86EC62615CC3A0056CB17;
 			packageReferences = (
-				A9A4B62726490D67001610B1 /* XCRemoteSwiftPackageReference "localazy-swift" */,
 			);
 			productRefGroup = A9E86ED42615CC3D0056CB17 /* Products */;
 			projectDirPath = "";
@@ -223,11 +313,23 @@
 			targets = (
 				A9E86ED22615CC3D0056CB17 /* LocalazyClient (iOS) */,
 				A9E86EDA2615CC3D0056CB17 /* LocalazyClient (macOS) */,
+				A9E189B72653B10A004459C4 /* LocalazyClient UIKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A9E189B62653B10A004459C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E189C72653B10B004459C4 /* LaunchScreen.storyboard in Resources */,
+				A9E189C42653B10B004459C4 /* Assets.xcassets in Resources */,
+				A9E189C22653B10A004459C4 /* Main.storyboard in Resources */,
+				A9E189D52653B9FA004459C4 /* Localazy.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9E86ED12615CC3D0056CB17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,6 +376,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A9E189B42653B10A004459C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E189BF2653B10A004459C4 /* ViewController.swift in Sources */,
+				A9E189BB2653B10A004459C4 /* AppDelegate.swift in Sources */,
+				A9E189D72653BB9E004459C4 /* UILabelLocalized.swift in Sources */,
+				A9E189BD2653B10A004459C4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9E86ECF2615CC3D0056CB17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,9 +428,68 @@
 			name = Localizable.stringsdict;
 			sourceTree = "<group>";
 		};
+		A9E189C02653B10A004459C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9E189C12653B10A004459C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9E189C52653B10B004459C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9E189C62653B10B004459C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A9E189C92653B10B004459C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82LEPE252C;
+				INFOPLIST_FILE = "LocalazyClient UIKit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sk.pulik.jaroslav.LocalazyClient-UIKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9E189CA2653B10B004459C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82LEPE252C;
+				INFOPLIST_FILE = "LocalazyClient UIKit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sk.pulik.jaroslav.LocalazyClient-UIKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		A9E86EE52615CC3D0056CB17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -541,6 +713,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A9E189CB2653B10B004459C4 /* Build configuration list for PBXNativeTarget "LocalazyClient UIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E189C92653B10B004459C4 /* Debug */,
+				A9E189CA2653B10B004459C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A9E86ECA2615CC3A0056CB17 /* Build configuration list for PBXProject "LocalazyClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -569,30 +750,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		A9A4B62726490D67001610B1 /* XCRemoteSwiftPackageReference "localazy-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/localazy/localazy-swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A9A4B62826490D67001610B1 /* Localazy */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A9A4B62726490D67001610B1 /* XCRemoteSwiftPackageReference "localazy-swift" */;
-			productName = Localazy;
-		};
-		A9A4B62B26490E8B001610B1 /* Localazy */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A9A4B62726490D67001610B1 /* XCRemoteSwiftPackageReference "localazy-swift" */;
-			productName = Localazy;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A9E86EC72615CC3A0056CB17 /* Project object */;
 }
