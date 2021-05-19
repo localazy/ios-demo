@@ -4,21 +4,23 @@
 <dict>
 	<key>readKey</key>
 	<string>read-token-1000000-3000200</string>
+	<key>tag</key>
+	<string></string>
+	<key>updateInterval</key>
+	<integer>0</integer>
+	<key>updateIntervalForFailure</key>
+	<integer>0</integer>
+	<key>updateDelay</key>
+	<integer>0</integer>
 	<key>testing</key>
 	<true/>
 	<key>statistics</key>
 	<dict>
 		<key>statsEnabled</key>
 		<true/>
-		<key>updateInterval</key>
-		<integer>0</integer>
-		<key>updateIntervalForFailure</key>
-		<integer>0</integer>
 		<key>statsInterval</key>
-		<integer>0</integer>
+		<integer>15</integer>
 		<key>statsIntervalForFailure</key>
-		<integer>0</integer>
-		<key>updateDelay</key>
 		<integer>0</integer>
 		<key>statsDelay</key>
 		<integer>0</integer>
@@ -26,10 +28,8 @@
 		<integer>0</integer>
 		<key>maximalStatsSize</key>
 		<integer>0</integer>
-		<key>updateForActivityOnly</key>
-		<false/>
 		<key>sendStatsRegularly</key>
-		<false/>
+		<true/>
 	</dict>
 </dict>
 </plist>
