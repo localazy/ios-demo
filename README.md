@@ -4,7 +4,7 @@
 
 ### Configuration file
 
-Adjust properties in the `Localazy.plist` configuration file to adjust Localazy SDK functionality. Espacially set your `readKey` to be able to use the SDK with your Localazy project.
+Adjust properties in the `Localazy.plist` configuration file to adjust Localazy SDK functionality. Especially set your `readKey` to be able to use the SDK with your Localazy project.
 
 For more information please check [documentation in Localazy SDK repository.](https://github.com/localazy/localazy-ios-library)
 
