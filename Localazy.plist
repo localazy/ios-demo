@@ -19,7 +19,7 @@
 		<key>statsEnabled</key>
 		<true/>
 		<key>statsInterval</key>
-		<integer>15</integer>
+		<integer>901</integer>
 		<key>statsIntervalForFailure</key>
 		<integer>0</integer>
 		<key>statsDelay</key>
