@@ -72,6 +72,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A903123D2656680E00B4D347 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A90E5368261F807A00443AC2 /* localazy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = localazy.json; sourceTree = "<group>"; };
 		A9119582261D926900066BF1 /* Localazy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Localazy.plist; sourceTree = "<group>"; };
 		A9934C2B2652522100AD141D /* Localazy.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Localazy.xcframework; sourceTree = "<group>"; };
@@ -162,6 +163,7 @@
 		A9E86EC62615CC3A0056CB17 = {
 			isa = PBXGroup;
 			children = (
+				A903123D2656680E00B4D347 /* README.md */,
 				A90E5368261F807A00443AC2 /* localazy.json */,
 				A9934C2B2652522100AD141D /* Localazy.xcframework */,
 				A9119582261D926900066BF1 /* Localazy.plist */,
@@ -241,7 +243,7 @@
 				A9E86ED02615CC3D0056CB17 /* Frameworks */,
 				A9E86ED12615CC3D0056CB17 /* Resources */,
 				A91195AA261DDED800066BF1 /* Embed Frameworks */,
-				A9EB3E9B26427F66002ACCE9 /* Localazy upload */,
+				A9EB3E9B26427F66002ACCE9 /* Upload strings to Localazy */,
 			);
 			buildRules = (
 			);
@@ -258,11 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9E86EEA2615CC3D0056CB17 /* Build configuration list for PBXNativeTarget "LocalazyClient (macOS)" */;
 			buildPhases = (
-				A95C1E212653F4CF00989F4A /* Upload strings to Localazy */,
 				A9E86ED72615CC3D0056CB17 /* Sources */,
 				A9E86ED82615CC3D0056CB17 /* Frameworks */,
 				A9E86ED92615CC3D0056CB17 /* Resources */,
 				A9934C302652526300AD141D /* Embed Frameworks */,
+				A95C1E212653F4CF00989F4A /* Upload strings to Localazy */,
 			);
 			buildRules = (
 			);
@@ -374,7 +376,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nlocalazy upload existing --test\n";
 		};
-		A9EB3E9B26427F66002ACCE9 /* Localazy upload */ = {
+		A9EB3E9B26427F66002ACCE9 /* Upload strings to Localazy */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -383,14 +385,14 @@
 			);
 			inputPaths = (
 			);
-			name = "Localazy upload";
+			name = "Upload strings to Localazy";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nlocalazy upload existing --test\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -472,14 +474,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 82LEPE252C;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "LocalazyClient UIKit/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "sk.pulik.jaroslav.LocalazyClient-UIKit";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.localazy.LocalazyClient-UIKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -493,14 +495,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 82LEPE252C;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "LocalazyClient UIKit/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "sk.pulik.jaroslav.LocalazyClient-UIKit";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.localazy.LocalazyClient-UIKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -626,7 +628,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 82LEPE252C;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -638,7 +640,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = sk.pulik.jaroslav.LocalazyClient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.localazy.LocalazyClient;
 				PRODUCT_NAME = LocalazyClient;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -652,7 +654,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 82LEPE252C;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -664,7 +666,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = sk.pulik.jaroslav.LocalazyClient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.localazy.LocalazyClient;
 				PRODUCT_NAME = LocalazyClient;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -681,7 +683,7 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 82LEPE252C;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -694,7 +696,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sk.pulik.jaroslav.LocalazyClient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.localazy.LocalazyClient;
 				PRODUCT_NAME = LocalazyClient;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -709,7 +711,7 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 82LEPE252C;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -722,7 +724,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sk.pulik.jaroslav.LocalazyClient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.localazy.LocalazyClient;
 				PRODUCT_NAME = LocalazyClient;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
